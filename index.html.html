@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Smart Simulator</title>
+
+<style type="text/css">
+body {
+	background-color: black;
+}
+
+.redC {
+	fill: red;
+}
+
+.greenC {
+	fill: green;
+}
+
+.yellowC {
+	fill: yellow;
+}
+
+.def {
+	fill: #222222;
+}
+</style>
+
+<script type="text/javascript">
+
+function loop () {
+	alert('t');
+	console.log('t');
+}
+
+setTimeout(function (){
+	loop();
+	}, 1000); 
+
+function init() {
+	
+// 	document.getElementById('red').setAttribute('class', 'redC');
+}
+</script>
+</head>
+<body>
+	<div align="center">
+		<svg preserveAspectRatio="none"
+			style="width: 100%; height: 100%; position: fixed; top: 0; left: 0; bottom: 0; right: 0;">
+
+			<g transform="translate(10,10)">
+				<rect width="100" height="300"
+				style="fill: #111111;stroke-width:3;stroke:rgb(0,0,0)" /> 
+				<rect width="10" height="350" x="45" y="295" fill="#333333" />
+				<circle cx="50" cy="50" r="40" id="red" class="def" />
+				<circle cx="50" cy="150" r="40" class="def" id="yellow" />
+				<circle cx="50" cy="250" r="40" class="def" id="green" />
+			</g>	
+
+		<!-- Base da pista :) -->
+			<line x1="0" y1="1100" x2="1500" y2="0"
+				style="stroke:rgb(255,255,255);stroke-width:2" />
+
+			<line x1="0" y1="700" x2="1024" y2="0"
+				style="stroke:rgb(255,255,255);stroke-width:2" />
+		<!-- Fim da base -->
+
+<!-- 			Faixa de pedestres -->
+			<g transform="translate(120,640)"> 
+				<line x1="-150" y1="105"
+					style="stroke:rgb(255,255,255);stroke-width:25" />
+			</g>
+	
+			<g transform="translate(145,670)"> 
+				<line x1="-150" y1="105"
+					style="stroke:rgb(255,255,255);stroke-width:25" />
+			</g>
+			
+			<g transform="translate(170,700)"> 
+				<line x1="-155" y1="110"
+					style="stroke:rgb(255,255,255);stroke-width:25" />
+			</g>
+			
+			<g transform="translate(195,730)"> 
+				<line x1="-150" y1="110"
+					style="stroke:rgb(255,255,255);stroke-width:25" />
+			</g>
+			
+			<g transform="translate(220,760)"> 
+				<line x1="-145" y1="110"
+					style="stroke:rgb(255,255,255);stroke-width:25" />
+			</g>
+			
+			<g transform="translate(245, 790)"> 
+				<line x1="-145" y1="110"
+					style="stroke:rgb(255,255,255);stroke-width:25" />
+			</g>
+			
+			<g transform="translate(270,820)"> 
+				<line x1="-145" y1="110"
+					style="stroke:rgb(255,255,255);stroke-width:25" />
+			</g>
+			
+			<g transform="translate(295,850)"> 
+				<line x1="-145" y1="110"
+					style="stroke:rgb(255,255,255);stroke-width:25" />
+			</g>
+			
+<!-- 			fim da faixa -->
+			<g transform="translate(480,550)"> 
+				<line x1="-135" y1="100"
+					style="stroke:rgb(255,255,255);stroke-width:2" />
+			</g>
+			
+			<g transform="translate(750,350)"> 
+				<line x1="-135" y1="100"
+					style="stroke:rgb(255,255,255);stroke-width:2" />
+			</g>
+			
+			<g transform="translate(1010,150)">
+				<line x1="-135" y1="100"
+					style="stroke:rgb(255,255,255);stroke-width:2" />
+			</g>
+			
+			<g transform="translate(1220,0)"> 
+				<line x1="-135" y1="100"
+					style="stroke:rgb(255,255,255);stroke-width:2" />
+			</g>
+			
+		</svg>
+	</div>
+</body>
+</html>
